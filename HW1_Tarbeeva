@@ -1,0 +1,49 @@
+print('Введите запрос: ')
+request = input()
+
+Compl_code = {'A':'T', 'a':'t', 'C':'G', 'c':'g', 'G':'C', 'g':'c', 'T':'A', 't':'a'}   
+Trans_code = {'A': 'A', 'a': 'a', 'C':'C', 'c':'c', 'G':'G', 'g':'g', 'T': 'U', 't': 'u' }
+
+for i in request:
+    
+    if request == 'exit':  
+        print('Good luck')
+        break
+        
+    if request != 'exit':
+        print('Введите последовательность: ')
+        nucleotides = input()
+
+        if request == 'transcribe':
+            nucleotides_trans = ''
+            for l in nucleotides:
+                if l in Trans_code:
+                    nucleotides_trans = nucleotides_trans + Trans_code[l]
+                else:
+                    print('Invalid alphabet. Try again!')
+            print(nucleotides_trans)
+            break
+
+        elif request == 'reverse':     
+            print(nucleotides[::-1])   
+            break
+
+        elif request == 'complement':
+            nucleotides_compl = ''
+            for l in nucleotides:
+                if l in Compl_code:
+                    nucleotides_compl = nucleotides_compl + Compl_code[l]
+                else:
+                    print('Invalid alphabet. Try again!')
+            print(nucleotides_compl)
+            break
+
+        elif request == 'reverse complement':
+            nucleotides_rev_comp = ''
+            for l in nucleotides:
+                if l in Compl_code:
+                    nucleotides_rev_comp = nucleotides_rev_comp + Compl_code[l]
+                else:
+                    print('Invalid alphabet. Try again!')
+            print(nucleotides_rev_comp[::-1])
+            break
