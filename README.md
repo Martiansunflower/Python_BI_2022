@@ -1,15 +1,7 @@
-Создала два словаря: Compl_code с комплементарными соответствиями нуклеотидова и Trans_code - с транскрибируемыми.
+## Visualisation 
+This code separated on two parts: task 1 and task 2.
 
-Создала цикл - если команда пользователя "exit", код выведет "Good luck" и прекратит работу.
+In the task 1 two functions for reading gff and bed files were defined.\
+Input for them must include path to file and file name. You shoild input gff file first, then bed file. Code creates a merge pable that contains information about the assembly of the genome. Column "name" contains the contigs matching rRNA.
 
-Если команда пользователя не  "exit", то пользователь вводит свою последовательность, и далее мы бежим сравнивать, какой именно запрос он ввел.
-
-Если пользователь ввел "transcribe", то создается пустая строка nucleotides_trans, куда циклом записываются значения из словаря Trans_code.
-
-Если пользователь ввел "reverse", то мы просто распечатываем введенную последовательность наоборот.
-
-Если пользователь ввел "complement", то создается пустая строка nucleotides_compl, куда циклом записываются значения из словаря Compl_code.
-
-Если пользователь ввел "reverse complement", то создается пустая строка nucleotides_rev_comp, куда опять же циклом записываются значения из словаря Compl_codе, и затем эта строка распечатывается в обратном порядке.
-
-В коде как минимум один баг -- после ввода неправильной последовательности он выдает на каждую неверную букву 'Invalid alphabet. Try again!' и затем все равно прописывает получившуюся переменную (т.к. я ее пропечатываю вне цикла). Как исправить, чтобы все остальное не летело, я пока не придумала.
+In the task 2 Volcano plot was created according to a given pattern. Matplotlib library was used.
