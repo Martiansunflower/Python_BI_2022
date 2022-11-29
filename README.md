@@ -1,2 +1,2 @@
 ## Welcome!
-My Python homework for Bioinformatic Institute lives here :house:
+My Python homework for Bioinformatics Institute lives here :house:
