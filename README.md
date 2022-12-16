@@ -5,7 +5,7 @@ This thread describes my attempt to reproduce Michael's research presented in th
 
 This work was performed at on Linux 5.15.0-56-generic x86_64, Ubuntu 22.04.1 LTS, Python 3.11.
 
-### Step 1. Installation of the necessary software. 
+### Step 1. Installation of the necessary software
 For running the script you will need Python ver. 3.11.`x`, you can download it from [here](https://www.python.org/downloads/release/python-3111/).
 Since we will need to install many libraries that may conflict with already installed ones, it makes sense to run the script in a virtual environment.
 So it is also necessary to install venv with Python 3.11, and you can do this with the following command:
@@ -32,7 +32,7 @@ git clone https://github.com/Martiansunflower/Python_BI_2022.git -b Homework_3
 cd Python_BI_2022/
 ```
 
-### Step 3.
+### Step 3. Dependencies
 
 Before going any further, please with ```python -V ``` and ```pip -V``` make sure that the python and pip versions match. 
 
