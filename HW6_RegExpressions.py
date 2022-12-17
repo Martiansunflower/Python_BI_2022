@@ -66,3 +66,15 @@ def Translator(rus_str):
 
 Translator('~Нам пора отпустить синиц, нам пора ловить журавлей')
 
+#7. Make a function for extracting sentences with a given number of words from text
+
+def find_n_words_sentences(text, words):
+    regexp1 = re.compile('[А-Я][\w\s]*')
+    sentenсe = regexp1.findall(text)
+    regexp2 = re.compile('[а-яА-Я]*\w')
+    result = []
+    for i in sentenсe:
+        words_in_s = tuple(regexp2.findall(i))
+        if len(words_in_s) == words:
+            result.append(words_in_s)
+    return(result)
